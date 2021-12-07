@@ -19,8 +19,6 @@ class CreateAboutsTable extends Migration
             $table->longText('about_en');
             $table->longText('mission_ar');
             $table->longText('mission_en');
-            $table->longText('vision_ar');
-            $table->longText('vision_en');
             $table->timestamps();
         });
     }

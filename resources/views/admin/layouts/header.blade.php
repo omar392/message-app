@@ -5,7 +5,7 @@
             <div class="topbar-left">
                 <a href="index.html" class="logo">
                     <span class="logo-light">
-                            <i class="mdi mdi-camera-control"></i> Stexo
+                            <i class="mdi mdi-camera-control"></i> رسائل
                         </span>
                     <span class="logo-sm">
                             <i class="mdi mdi-camera-control"></i>

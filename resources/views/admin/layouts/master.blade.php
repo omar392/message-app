@@ -14,7 +14,7 @@
 <div class="content-page">
 @yield('content')
 <footer class="footer" dir="ltr">
-    © 2021  <span class="d-none d-sm-inline-block"> -  Designing & Programming <i class="mdi mdi-heart text-danger"></i> by Green Way</span>.
+    © 2021  <span class="d-none d-sm-inline-block"> -  Designing & Programming <i class="mdi mdi-heart text-danger"></i> by Soft Steps</span>.
 </footer>
 
 </div>

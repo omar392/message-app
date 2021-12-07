@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Green Way</title>
+    <title>تطبيق رسائل</title>
     <meta content="Responsive admin theme build on top of Bootstrap 4" name="description" />
     <meta content="Themesdesign" name="author" />
     <link rel="shortcut icon" href="{{asset('dashboard/assets/images/favicon.ico')}}">
@@ -36,7 +36,7 @@
         <div class="card card-pages shadow-none">
             <div class="card-body">
                 <div class="text-center m-t-0 m-b-15">
-                    <a href="" class="logo logo-admin"><img src="{{asset('dashboard/assets/images/logo-dark.png')}}" alt="" height="24"></a>
+                    {{-- <a href="" class="logo logo-admin"><img src="{{asset('dashboard/assets/images/logo-dark.png')}}" alt="" height="24"></a> --}}
                 </div>
 
                 <h5 class="font-18 text-center" style="font-family: cairo;">تسجيل الدخول</h5>

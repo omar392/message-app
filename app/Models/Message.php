@@ -5,13 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class About extends Model
+class Message extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'about_ar',
-        'about_en',
-        'mission_ar',
-        'mission_en',
-    ];
+    protected $fillable = ['title_ar','title_en','message_ar','message_en','status'];
 }

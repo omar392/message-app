@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminsController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\TeamController;
@@ -19,11 +20,11 @@ Route::POST('logout',[LoginController::class,'logout'])->name('admin.logout');
 Route::group(['prefix' => 'admin', 'middleware' => ['auth:admin']], function () {
 
 
-//Admins 
+//Admins
 Route::resource('admins', AdminsController::class);
 Route::post('admins_status',[AdminsController::class,'adminsStatus'])->name('admins.status');
 
-//roles 
+//roles
 Route::resource('roles', RoleController::class);
 
 //settings
@@ -34,9 +35,13 @@ Route::post('setting',[SettingController::class,'update'])->name('updatesetting'
 Route::get('about',[AboutController::class,'index'])->name('about');
 Route::post('about',[AboutController::class,'update'])->name('updateabout');
 
-//our team 
-Route::resource('team', TeamController::class);
-Route::post('team_status',[TeamController::class,'teamStatus'])->name('team.status');
+// //our team
+// Route::resource('team', TeamController::class);
+// Route::post('team_status',[TeamController::class,'teamStatus'])->name('team.status');
+
+//messages
+Route::resource('message', MessageController::class);
+Route::post('message_status',[MessageController::class,'messageStatus'])->name('message.status');
 
 
 });

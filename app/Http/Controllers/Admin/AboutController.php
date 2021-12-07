@@ -25,8 +25,6 @@ class AboutController extends Controller
             'about_en'=>$request->input('about_en'),
             'mission_ar'=>$request->input('mission_ar'),
             'mission_en'=>$request->input('mission_en'),
-            'vision_ar'=>$request->input('vision_ar'),
-            'vision_en'=>$request->input('vision_en'),
         ]);
         toastr()->info('تم التعديل بنجاح');
         return redirect()->back();

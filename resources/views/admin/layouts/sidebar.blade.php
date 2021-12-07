@@ -26,13 +26,20 @@
                             </a>
                         </li>
                         @endif
-                        @if(Auth::guard('admin')->user()->hasPermission('teams-read'))
+                        @if(Auth::guard('admin')->user()->hasPermission('messages-read'))
                         <li>
-                            <a href="{{route('team.index')}}" class="waves-effect">
-                                <i class="fas fa-user-friends"></i><span style="font-family: cairo;"> فريق العمل  </span>
+                            <a href="{{route('message.index')}}" class="waves-effect">
+                                <i class="fas fa-envelope"></i><span style="font-family: cairo;">الرسائل و التدوينات</span>
                             </a>
                         </li>
                         @endif
+                        {{-- @if(Auth::guard('admin')->user()->hasPermission('teams-read')) --}}
+                        {{-- <li>
+                            <a href="{{route('team.index')}}" class="waves-effect">
+                                <i class="fas fa-user-friends"></i><span style="font-family: cairo;"> فريق العمل  </span>
+                            </a>
+                        </li> --}}
+                        {{-- @endif --}}
                         @if(Auth::guard('admin')->user()->hasPermission('abouts-read'))
                         <li>
                             <a href="{{route('about')}}" class="waves-effect">

@@ -17,10 +17,9 @@ class AboutSeeder extends Seeder
         About::create([
             'about_ar'=>'من نحن',
             'about_en'=>'about_en',
-            'mission_ar'=>'الرسالة',
-            'mission_en'=>'mission_en',
-            'vision_ar'=>'الرؤية',
-            'vision_en'=>'vision_en',
+            'mission_ar'=>'الشروط و الاحكام',
+            'mission_en'=>'Terms And Conditions',
+
         ]);
     }
 }

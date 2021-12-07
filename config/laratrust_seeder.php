@@ -12,16 +12,19 @@ return [
     'truncate_tables' => true,
 
     'roles_structure' => [
-    
+
         'super_admin'=>[
 
-            'teams'=>'c,r,u,d',
+            // 'teams'=>'c,r,u,d',
             'users'=>'c,r,u,d',
             'admins'=>'c,r,u,d',
+            'references'=>'c,r,u,d',
+            'messages'=>'c,r,u,d',
+            'contacts'=>'c,r,u,d',
             'roles'=>'c,r,u,d',
             'settings' => 'r,u',
             'abouts' => 'r,u',
-            
+
         ]
 
     ],

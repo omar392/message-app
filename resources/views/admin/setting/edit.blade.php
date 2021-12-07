@@ -60,23 +60,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="example-text-input" class="col-sm-2 col-form-label">لينكد ان </label>
-                                    <div class="col-sm-10">
-                                        <input class="form-control" name="linkedin" value="{{ $setting->linkedin }}"
-                                            id="example-text-input" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
                                     <label for="example-text-input" class="col-sm-2 col-form-label">تويتر</label>
                                     <div class="col-sm-10">
                                         <input class="form-control" name="twitter" value="{{ $setting->twitter }}"
-                                            id="example-text-input" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="example-text-input" class="col-sm-2 col-form-label">اليوتيوب</label>
-                                    <div class="col-sm-10">
-                                        <input class="form-control" name="youtube" value="{{ $setting->youtube }}"
                                             id="example-text-input" required>
                                     </div>
                                 </div>
@@ -92,20 +78,6 @@
                                     <div class="col-sm-10">
                                         <input class="form-control" name="instagram" value="{{ $setting->instagram }}"
                                             id="example-text-input" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="example-text-input" class="col-sm-2 col-form-label">العنوان </label>
-                                    <div class="col-sm-10">
-                                        <textarea name="address_ar" class="form-control" id="" cols="30"
-                                            rows="10">{{ $setting->address_ar }}</textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="example-text-input" class="col-sm-2 col-form-label">Address</label>
-                                    <div class="col-sm-10">
-                                        <textarea name="address_en" class="form-control" id="" cols="30"
-                                            rows="10">{{ $setting->address_en }}</textarea>
                                     </div>
                                 </div>
                                 @if(Auth::guard('admin')->user()->hasPermission('settings-update'))

@@ -33,55 +33,25 @@
                                         <div class="form-group row">
                                             <label for="example-text-input" class="col-sm-2 col-form-label">من نحن</label>
                                             <div class="col-sm-10">
-                                                <textarea class="form-control" name="about_ar" id="editor">{!! $about->about_ar !!}</textarea>
-                                                <script>
-                                                        CKEDITOR.replace( 'editor' );
-                                                </script>
+                                                <textarea class="form-control" name="about_ar">{!! $about->about_ar !!}</textarea>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="example-text-input" class="col-sm-2 col-form-label">About Us</label>
                                             <div class="col-sm-10">
-                                                <textarea class="form-control" name="about_en" id="editor1">{!! $about->about_en !!}</textarea>
-                                                <script>
-                                                        CKEDITOR.replace( 'editor1' );
-                                                </script>
+                                                <textarea class="form-control" name="about_en">{!! $about->about_en !!}</textarea>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="example-text-input" class="col-sm-2 col-form-label">الرسالة</label>
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">الشروط والأحكام</label>
                                             <div class="col-sm-10">
-                                                <textarea class="form-control" name="mission_ar" id="editor2">{!! $about->mission_ar !!}</textarea>
-                                                <script>
-                                                        CKEDITOR.replace( 'editor2' );
-                                                </script>
+                                                <textarea class="form-control" name="mission_ar">{!! $about->mission_ar !!}</textarea>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="example-text-input" class="col-sm-2 col-form-label">Mission</label>
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Terms and Conditions</label>
                                             <div class="col-sm-10">
-                                                <textarea class="form-control" name="mission_en" id="editor3">{!! $about->mission_en !!}</textarea>
-                                                <script>
-                                                        CKEDITOR.replace( 'editor3' );
-                                                </script>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="example-text-input" class="col-sm-2 col-form-label">الرؤية</label>
-                                            <div class="col-sm-10">
-                                                <textarea class="form-control" name="vision_ar" id="editor4">{!! $about->vision_ar !!}</textarea>
-                                                <script>
-                                                        CKEDITOR.replace( 'editor4' );
-                                                </script>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="example-text-input" class="col-sm-2 col-form-label">Vision</label>
-                                            <div class="col-sm-10">
-                                                <textarea class="form-control" name="vision_en" id="editor5">{!! $about->vision_en !!}</textarea>
-                                                <script>
-                                                        CKEDITOR.replace( 'editor5' );
-                                                </script>
+                                                <textarea class="form-control" name="mission_en">{!! $about->mission_en !!}</textarea>
                                             </div>
                                         </div>
                                         @if(Auth::guard('admin')->user()->hasPermission('abouts-update'))
@@ -95,7 +65,7 @@
                                     </div>
                                 </div>
                             </div> <!-- end col -->
-                        </div> <!-- end row -->      
+                        </div> <!-- end row -->
                     </div>
                     <!-- container-fluid -->
 
@@ -103,7 +73,7 @@
                 <!-- content -->
 
 
-            
+
             <!-- ============================================================== -->
             <!-- End Right content here -->
             <!-- ============================================================== -->

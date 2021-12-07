@@ -13,12 +13,8 @@ class Setting extends Model
         'phone',
         'whatsapp',
         'facebook',
-        'linkedin',
         'twitter',
-        'youtube',
         'snapchat',
         'instagram',
-        'address_ar',
-        'address_en',
     ];
 }
