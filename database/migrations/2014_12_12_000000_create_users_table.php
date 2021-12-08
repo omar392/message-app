@@ -15,6 +15,8 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+
+
             $table->string('name');
             $table->string('phone');
             $table->string('code')->default(rand(1111, 9999));
@@ -25,6 +27,7 @@ class CreateUsersTable extends Migration
             $table->enum('status',['active','inactive'])->default('active');
             $table->rememberToken();
             $table->timestamps();
+
         });
     }
 

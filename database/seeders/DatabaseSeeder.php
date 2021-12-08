@@ -18,6 +18,9 @@ class DatabaseSeeder extends Seeder
         $this->call(AdminSeeder::class);
         $this->call(SettingSeeder::class);
         $this->call(AboutSeeder::class);
-        
+        // \App\Models\User::factory(20)->create();
+        // \App\Models\Message::factory(20)->create();
+
+
     }
 }
