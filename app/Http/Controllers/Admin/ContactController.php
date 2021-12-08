@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -14,7 +15,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        $contact = Contact::get();
+        return view('admin.contact.index',compact('contact'));
     }
 
     /**
@@ -80,6 +82,17 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $contact = Contact::find($id);
+        if($contact){
+        $status=$contact->delete();
+        if($status){
+            toastr()->error('تم الحذف بنجاح');
+            return redirect()->route('contact.index');
+        }else{
+            return redirect()->with('error','هناك خطأ ما !!');
+        }
+        }else{
+            return back()->with('error','هذه البيانات غير موجودة');
+        }
     }
 }

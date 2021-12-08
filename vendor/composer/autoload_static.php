@@ -113,6 +113,7 @@ class ComposerStaticInit9cfb97963650ea1a1dcec709af066b57
         ),
         'O' => 
         array (
+            'Overtrue\\LaravelFavorite\\' => 25,
             'Opis\\Closure\\' => 13,
         ),
         'N' => 
@@ -381,6 +382,10 @@ class ComposerStaticInit9cfb97963650ea1a1dcec709af066b57
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
+        'Overtrue\\LaravelFavorite\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/overtrue/laravel-favorite/src',
         ),
         'Opis\\Closure\\' => 
         array (
@@ -2831,18 +2836,16 @@ class ComposerStaticInit9cfb97963650ea1a1dcec709af066b57
         'Lcobucci\\JWT\\Signer' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer.php',
         'Lcobucci\\JWT\\Signer\\BaseSigner' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/BaseSigner.php',
         'Lcobucci\\JWT\\Signer\\Ecdsa' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa.php',
-        'Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/MultibyteStringConverter.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\KeyParser' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/KeyParser.php',
         'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha256.php',
         'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha384.php',
         'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha512' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha512.php',
-        'Lcobucci\\JWT\\Signer\\Ecdsa\\SignatureConverter' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/SignatureConverter.php',
         'Lcobucci\\JWT\\Signer\\Hmac' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac.php',
         'Lcobucci\\JWT\\Signer\\Hmac\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha256.php',
         'Lcobucci\\JWT\\Signer\\Hmac\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha384.php',
         'Lcobucci\\JWT\\Signer\\Hmac\\Sha512' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha512.php',
         'Lcobucci\\JWT\\Signer\\Key' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Key.php',
         'Lcobucci\\JWT\\Signer\\Keychain' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Keychain.php',
-        'Lcobucci\\JWT\\Signer\\OpenSSL' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/OpenSSL.php',
         'Lcobucci\\JWT\\Signer\\Rsa' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa.php',
         'Lcobucci\\JWT\\Signer\\Rsa\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa/Sha256.php',
         'Lcobucci\\JWT\\Signer\\Rsa\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa/Sha384.php',
@@ -3511,6 +3514,13 @@ class ComposerStaticInit9cfb97963650ea1a1dcec709af066b57
         'Opis\\Closure\\SecurityProvider' => __DIR__ . '/..' . '/opis/closure/src/SecurityProvider.php',
         'Opis\\Closure\\SelfReference' => __DIR__ . '/..' . '/opis/closure/src/SelfReference.php',
         'Opis\\Closure\\SerializableClosure' => __DIR__ . '/..' . '/opis/closure/src/SerializableClosure.php',
+        'Overtrue\\LaravelFavorite\\Events\\Event' => __DIR__ . '/..' . '/overtrue/laravel-favorite/src/Events/Event.php',
+        'Overtrue\\LaravelFavorite\\Events\\Favorited' => __DIR__ . '/..' . '/overtrue/laravel-favorite/src/Events/Favorited.php',
+        'Overtrue\\LaravelFavorite\\Events\\Unfavorited' => __DIR__ . '/..' . '/overtrue/laravel-favorite/src/Events/Unfavorited.php',
+        'Overtrue\\LaravelFavorite\\Favorite' => __DIR__ . '/..' . '/overtrue/laravel-favorite/src/Favorite.php',
+        'Overtrue\\LaravelFavorite\\FavoriteServiceProvider' => __DIR__ . '/..' . '/overtrue/laravel-favorite/src/FavoriteServiceProvider.php',
+        'Overtrue\\LaravelFavorite\\Traits\\Favoriteable' => __DIR__ . '/..' . '/overtrue/laravel-favorite/src/Traits/Favoriteable.php',
+        'Overtrue\\LaravelFavorite\\Traits\\Favoriter' => __DIR__ . '/..' . '/overtrue/laravel-favorite/src/Traits/Favoriter.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',

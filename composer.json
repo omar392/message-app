@@ -12,6 +12,7 @@
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
+        "overtrue/laravel-favorite": "^4.0",
         "santigarcor/laratrust": "^6.3",
         "tymon/jwt-auth": "^1.0",
         "yoeunes/toastr": "^1.2"

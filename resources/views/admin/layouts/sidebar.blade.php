@@ -26,6 +26,13 @@
                             </a>
                         </li>
                         @endif
+                        @if(Auth::guard('admin')->user()->hasPermission('users-read'))
+                        <li>
+                            <a href="{{route('user.index')}}" class="waves-effect">
+                                <i class="fas fa-users"></i><span style="font-family: cairo;"> المستخدمين </span>
+                            </a>
+                        </li>
+                        @endif
                         @if(Auth::guard('admin')->user()->hasPermission('messages-read'))
                         <li>
                             <a href="{{route('message.index')}}" class="waves-effect">
@@ -33,6 +40,18 @@
                             </a>
                         </li>
                         @endif
+                        @if(Auth::guard('admin')->user()->hasPermission('references-read'))
+                        <li>
+                            <a href="{{route('reference.index')}}" class="waves-effect">
+                                <i class="fas fa-book-reader"></i><span style="font-family: cairo;">المراجع والمصادر</span>
+                            </a>
+                        </li>
+                        @endif
+                        <li>
+                            <a href="{{route('contact.index')}}" class="waves-effect">
+                                <i class="fas fa-envelope"></i><span style="font-family: cairo;">رسائل التواصل</span>
+                            </a>
+                        </li>
                         {{-- @if(Auth::guard('admin')->user()->hasPermission('teams-read')) --}}
                         {{-- <li>
                             <a href="{{route('team.index')}}" class="waves-effect">

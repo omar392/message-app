@@ -1578,17 +1578,17 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.74.0",
-            "version_normalized": "8.74.0.0",
+            "version": "v8.75.0",
+            "version_normalized": "8.75.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "004ea195012d5132eca07a176a6e587c6a74815e"
+                "reference": "0bb91d3176357da232da69762a64b0e0a0988637"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/004ea195012d5132eca07a176a6e587c6a74815e",
-                "reference": "004ea195012d5132eca07a176a6e587c6a74815e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/0bb91d3176357da232da69762a64b0e0a0988637",
+                "reference": "0bb91d3176357da232da69762a64b0e0a0988637",
                 "shasum": ""
             },
             "require": {
@@ -1706,7 +1706,7 @@
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0).",
                 "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
             },
-            "time": "2021-11-30T15:26:05+00:00",
+            "time": "2021-12-07T14:55:46+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1753,17 +1753,17 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.12.9",
-            "version_normalized": "1.12.9.0",
+            "version": "v1.12.10",
+            "version_normalized": "1.12.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "81609c1c8ce069aa6c3613ccb843cdec299424be"
+                "reference": "9d5000703c7f811588a780b9aab91cca5c336319"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/81609c1c8ce069aa6c3613ccb843cdec299424be",
-                "reference": "81609c1c8ce069aa6c3613ccb843cdec299424be",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/9d5000703c7f811588a780b9aab91cca5c336319",
+                "reference": "9d5000703c7f811588a780b9aab91cca5c336319",
                 "shasum": ""
             },
             "require": {
@@ -1772,7 +1772,7 @@
                 "illuminate/support": "^8.0|^9.0",
                 "php": "^7.3|^8.0"
             },
-            "time": "2021-11-30T15:50:24+00:00",
+            "time": "2021-12-07T16:25:11+00:00",
             "bin": [
                 "bin/sail"
             ],
@@ -1878,17 +1878,17 @@
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.6.2",
-            "version_normalized": "2.6.2.0",
+            "version": "v2.6.3",
+            "version_normalized": "2.6.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "c808a7227f97ecfd9219fbf913bad842ea854ddc"
+                "reference": "a9ddee4761ec8453c584e393b393caff189a3e42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/c808a7227f97ecfd9219fbf913bad842ea854ddc",
-                "reference": "c808a7227f97ecfd9219fbf913bad842ea854ddc",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/a9ddee4761ec8453c584e393b393caff189a3e42",
+                "reference": "a9ddee4761ec8453c584e393b393caff189a3e42",
                 "shasum": ""
             },
             "require": {
@@ -1906,7 +1906,7 @@
             "suggest": {
                 "illuminate/database": "The Illuminate Database package (^6.0|^7.0|^8.0)."
             },
-            "time": "2021-09-28T15:47:34+00:00",
+            "time": "2021-12-07T16:41:42+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1943,7 +1943,7 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
-                "source": "https://github.com/laravel/tinker/tree/v2.6.2"
+                "source": "https://github.com/laravel/tinker/tree/v2.6.3"
             },
             "install-path": "../laravel/tinker"
         },
@@ -2013,32 +2013,35 @@
         },
         {
             "name": "lcobucci/jwt",
-            "version": "3.3.3",
-            "version_normalized": "3.3.3.0",
+            "version": "3.2.5",
+            "version_normalized": "3.2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "c1123697f6a2ec29162b82f170dd4a491f524773"
+                "reference": "82be04b4753f8b7693b62852b7eab30f97524f9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/c1123697f6a2ec29162b82f170dd4a491f524773",
-                "reference": "c1123697f6a2ec29162b82f170dd4a491f524773",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/82be04b4753f8b7693b62852b7eab30f97524f9b",
+                "reference": "82be04b4753f8b7693b62852b7eab30f97524f9b",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
                 "ext-openssl": "*",
-                "php": "^5.6 || ^7.0"
+                "php": ">=5.5"
             },
             "require-dev": {
+                "mdanter/ecc": "~0.3.1",
                 "mikey179/vfsstream": "~1.5",
                 "phpmd/phpmd": "~2.2",
                 "phpunit/php-invoker": "~1.1",
-                "phpunit/phpunit": "^5.7 || ^7.3",
+                "phpunit/phpunit": "~4.5",
                 "squizlabs/php_codesniffer": "~2.3"
             },
-            "time": "2020-08-20T13:22:28+00:00",
+            "suggest": {
+                "mdanter/ecc": "Required to use Elliptic Curves based algorithms."
+            },
+            "time": "2018-11-11T12:22:26+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2069,18 +2072,8 @@
             ],
             "support": {
                 "issues": "https://github.com/lcobucci/jwt/issues",
-                "source": "https://github.com/lcobucci/jwt/tree/3.3.3"
+                "source": "https://github.com/lcobucci/jwt/tree/3.2"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/lcobucci",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/lcobucci",
-                    "type": "patreon"
-                }
-            ],
             "install-path": "../lcobucci/jwt"
         },
         {
@@ -3206,6 +3199,72 @@
                 "source": "https://github.com/opis/closure/tree/3.6.2"
             },
             "install-path": "../opis/closure"
+        },
+        {
+            "name": "overtrue/laravel-favorite",
+            "version": "4.0.1",
+            "version_normalized": "4.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-favorite.git",
+                "reference": "f86cf5136985b3b7c585c279104891bf434c609d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-favorite/zipball/f86cf5136985b3b7c585c279104891bf434c609d",
+                "reference": "f86cf5136985b3b7c585c279104891bf434c609d",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^8.0",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "brainmaestro/composer-git-hooks": "^2.7",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "mockery/mockery": "^1.2",
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "time": "2021-06-09T06:20:20+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelFavorite\\FavoriteServiceProvider"
+                    ]
+                },
+                "hooks": {
+                    "pre-commit": [
+                        "composer fix-style"
+                    ],
+                    "pre-push": [
+                        "composer test"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelFavorite\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "User favorite features for Laravel Application.",
+            "support": {
+                "issues": "https://github.com/overtrue/laravel-favorite/issues",
+                "source": "https://github.com/overtrue/laravel-favorite/tree/4.0.1"
+            },
+            "install-path": "../overtrue/laravel-favorite"
         },
         {
             "name": "phar-io/manifest",
@@ -8380,17 +8439,17 @@
         },
         {
             "name": "tymon/jwt-auth",
-            "version": "1.0.2",
-            "version_normalized": "1.0.2.0",
+            "version": "dev-develop",
+            "version_normalized": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tymondesigns/jwt-auth.git",
-                "reference": "e588cb719539366c0e2f6017f975379cb73e9680"
+                "reference": "ab00f2d7cce5f043067aef7849cdc792de2df635"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/e588cb719539366c0e2f6017f975379cb73e9680",
-                "reference": "e588cb719539366c0e2f6017f975379cb73e9680",
+                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/ab00f2d7cce5f043067aef7849cdc792de2df635",
+                "reference": "ab00f2d7cce5f043067aef7849cdc792de2df635",
                 "shasum": ""
             },
             "require": {
@@ -8401,16 +8460,18 @@
                 "lcobucci/jwt": "<3.4",
                 "namshi/jose": "^7.0",
                 "nesbot/carbon": "^1.0|^2.0",
-                "php": "^5.5.9|^7.0"
+                "php": "^7.2|^8.0"
             },
             "require-dev": {
                 "illuminate/console": "^5.2|^6|^7|^8",
                 "illuminate/database": "^5.2|^6|^7|^8",
                 "illuminate/routing": "^5.2|^6|^7|^8",
                 "mockery/mockery": ">=0.9.9",
-                "phpunit/phpunit": "~4.8|~6.0"
+                "phpunit/phpunit": "^8.5|^9.4",
+                "yoast/phpunit-polyfills": "^0.2.0"
             },
-            "time": "2020-11-27T12:32:42+00:00",
+            "time": "2021-02-02T14:44:28+00:00",
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {

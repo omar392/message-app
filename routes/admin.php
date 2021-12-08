@@ -3,11 +3,13 @@
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminsController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\ReferenceController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\SettingController;
-use App\Http\Controllers\Admin\TeamController;
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -35,14 +37,20 @@ Route::post('setting',[SettingController::class,'update'])->name('updatesetting'
 Route::get('about',[AboutController::class,'index'])->name('about');
 Route::post('about',[AboutController::class,'update'])->name('updateabout');
 
-// //our team
-// Route::resource('team', TeamController::class);
-// Route::post('team_status',[TeamController::class,'teamStatus'])->name('team.status');
-
 //messages
 Route::resource('message', MessageController::class);
 Route::post('message_status',[MessageController::class,'messageStatus'])->name('message.status');
 
+//references
+Route::resource('reference', ReferenceController::class);
+Route::post('reference_status',[ReferenceController::class,'referenceStatus'])->name('reference.status');
+
+//users 
+Route::resource('user', UserController::class);
+Route::post('user_status',[UserController::class,'userStatus'])->name('user.status');
+
+//contact
+Route::resource('contact', ContactController::class);
 
 });
 

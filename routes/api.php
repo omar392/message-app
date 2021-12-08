@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,19 +15,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
 
-Route::post('login', [ApiController::class, 'authenticate']);
-Route::post('register', [ApiController::class, 'register']);
+
+
+
+
+Route::post('register',[AuthController::class,'registerUser']);
+Route::post('verifycode',[AuthController::class,'verifyCode']);
+Route::post('resendcode',[AuthController::class,'resetCode']);
+Route::post('forgetpassword',[AuthController::class,'forgetPassword']);
+Route::post('login',[AuthController::class,'loginUser']);
 
 Route::group(['middleware' => ['jwt.verify']], function() {
+
     Route::get('logout', [ApiController::class, 'logout']);
     Route::get('get_user', [ApiController::class, 'get_user']);
-    Route::get('products', [ProductController::class, 'index']);
-    Route::get('products/{id}', [ProductController::class, 'show']);
-    Route::post('create', [ProductController::class, 'store']);
-    Route::put('update/{product}',  [ProductController::class, 'update']);
-    Route::delete('delete/{product}',  [ProductController::class, 'destroy']);
+
 });
