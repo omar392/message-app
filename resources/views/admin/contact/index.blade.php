@@ -100,27 +100,5 @@
                 });
         });
     </script>
-    <script>
-        // $('input[name=toogle]').change(function() {
-        //     var mode = $(this).prop('checked');
-        //     var id = $(this).val();
-        //     // alert(id);
-        //     $.ajax({
-        //         url: "{{ route('contact.status') }}",
-        //         type: "POST",
-        //         data: {
-        //             _token: '{{ csrf_token() }}',
-        //             mode: mode,
-        //             id: id,
-        //         },
-        //         success: function(response) {
-        //             if (response.status) {
-        //                 toastr.success(response.msg);
-        //             } else {
-        //                 alert('من فضلك حاول مرة أخرى')
-        //             }
-        //         }
-        //     })
-        // });
-    </script>
+ 
 @endsection
