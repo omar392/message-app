@@ -8,11 +8,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laratrust\Traits\LaratrustUserTrait;
 use Tymon\JWTAuth\Contracts\JWTSubject;
+use Overtrue\LaravelFavorite\Traits\Favoriter;
 
 class User extends Authenticatable implements JWTSubject
 {
     use LaratrustUserTrait;
     use HasFactory, Notifiable;
+    use Favoriter;
 
     /**
      * The attributes that are mass assignable.
