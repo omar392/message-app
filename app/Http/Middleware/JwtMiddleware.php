@@ -6,6 +6,8 @@ use Closure;
 use Illuminate\Http\Request;
 use JWTAuth;
 use Exception;
+use Illuminate\Support\Facades\Auth;
+use Tymon\JWTAuth\Facades\JWTAuth as FacadesJWTAuth;
 
 class JwtMiddleWare
 {
@@ -19,7 +21,7 @@ class JwtMiddleWare
     public function handle(Request $request, Closure $next)
     {
         try {
-            $user = Auth::parseToken()->authenticate();
+            $user = FacadesJWTAuth::parseToken()->authenticate();
         } catch (Exception $e) {
             if ($e instanceof \Tymon\JWTAuth\Exceptions\TokenInvalidException){
                 return response()->json(['status' => 'Token is Invalid']);
