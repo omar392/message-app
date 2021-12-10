@@ -7,6 +7,7 @@ return [
     'roles'=>'الصلاحيات',
     'offers'=>'العروض',
     'messages'=>'الرسائل',
+    'introductions'=>'الصفحة الافتتاحية',
     'settings'=>'الاعدادات',
     'abouts'=>'من نحن',
     'create'=>'اضافة',

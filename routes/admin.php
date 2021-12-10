@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminsController;
 use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\IntroductionController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\ReferenceController;
@@ -41,11 +42,15 @@ Route::post('about',[AboutController::class,'update'])->name('updateabout');
 Route::resource('message', MessageController::class);
 Route::post('message_status',[MessageController::class,'messageStatus'])->name('message.status');
 
+//introduction
+Route::resource('introduction', IntroductionController::class);
+Route::post('introduction_status',[IntroductionController::class,'introductionStatus'])->name('introduction.status');
+
 //references
 Route::resource('reference', ReferenceController::class);
 Route::post('reference_status',[ReferenceController::class,'referenceStatus'])->name('reference.status');
 
-//users 
+//users
 Route::resource('user', UserController::class);
 Route::post('user_status',[UserController::class,'userStatus'])->name('user.status');
 

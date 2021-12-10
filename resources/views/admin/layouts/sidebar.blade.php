@@ -26,6 +26,13 @@
                             </a>
                         </li>
                         @endif
+                        @if(Auth::guard('admin')->user()->hasPermission('introductions-read'))
+                        <li>
+                            <a href="{{route('introduction.index')}}" class="waves-effect">
+                                <i class="fas fa-network-wired"></i><span style="font-family: cairo;"> الصفحة الافتتاحية </span>
+                            </a>
+                        </li>
+                        @endif
                         @if(Auth::guard('admin')->user()->hasPermission('users-read'))
                         <li>
                             <a href="{{route('user.index')}}" class="waves-effect">

@@ -20,6 +20,7 @@ return [
             'admins'=>'c,r,u,d',
             'references'=>'c,r,u,d',
             'messages'=>'c,r,u,d',
+            'introductions'=>'c,r,u,d',
             'contacts'=>'c,r,u,d',
             'roles'=>'c,r,u,d',
             'settings' => 'r,u',

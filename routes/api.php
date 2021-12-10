@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 
 //messages
 Route::get('all-messages',[MessageController::class,'getMessage']);
+//introductions
+Route::get('introductions',[MessageController::class,'getIntroduction']);
 //references
 Route::get('all-references',[ReferenceController::class,'getReference']);
 //setting
@@ -35,7 +37,7 @@ Route::group(['middleware' => ['jwt.verify']], function() {
 
     //favorite
 
-    
+
 
     //end favorite
 
