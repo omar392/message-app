@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\FavUserResource;
 use App\Http\Resources\MessageResource;
 use App\Models\Message;
 use App\Models\User;
@@ -47,7 +48,7 @@ class FavoriteController extends Controller
         //dd($favorteDaycares->rates->stars);
             return response()->json([
                 'status'=>'success',
-                'favorites' => MessageResource::collection($favortemessage)
+                'favorites' => FavUserResource::collection($favortemessage)
             ], 200);
 
     }
