@@ -54,6 +54,48 @@ class MessageController extends Controller
         ]);
         $data = $request->all();
         $status = Message::create($data);
+
+
+        if($status){
+            // $not = new Notification();
+            // $not->title = "تم الغاء الطلب ورفضه";
+            // $not->body = "تم الغاء طلبك ورفضه";
+            // $not->title_en= "new notification";
+            // $not->body_en = "you have new order";
+            // $not->user_id = $order->user_id;
+
+            // $not->save();
+
+            $to = "/topics/newMessage";
+            $fields = array(
+                'to'   => $to,
+                "notification"=>[
+                    "title"=>"رسالة جديدة",
+                    "body"=>"رسالة جديدة"
+                    ],
+            );
+
+            // Set POST variables
+            $url = 'https://fcm.googleapis.com/fcm/send';
+            $ch = curl_init();
+
+            curl_setopt( $ch, CURLOPT_URL, $url );
+            curl_setopt( $ch, CURLOPT_POST, true );
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json; ',
+                        'Authorization: key = AAAAKwzGx1M:APA91bFSTh99vOfbAdiiid0DC6m0T3v0SfSxl0ZdwrWBKfy_oDMBXMBExy4s9md4IYfZfGJE1UKJM-hOqEajl6z5N5OYUiqJHOhzSeUCfF5vShp75DytL7eiObci3MG_fJhUefDRev4H'));
+            curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+            curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
+            curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $fields ) );
+            $result = curl_exec( $ch );
+            if ( $result === false ) {
+              die( 'Curl failed: ' . curl_error( $ch ) );
+            }
+            // Close connection
+            curl_close( $ch );
+        }
+
+
+
         if($status){
             toastr()->success('تم الحفظ بنجاح');
             return redirect()->route('message.index');

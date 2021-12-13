@@ -580,6 +580,7 @@ class ComposerStaticInit9cfb97963650ea1a1dcec709af066b57
         'App\\Http\\Controllers\\Admin\\TeamController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TeamController.php',
         'App\\Http\\Controllers\\Admin\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/UserController.php',
         'App\\Http\\Controllers\\Api\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/AuthController.php',
+        'App\\Http\\Controllers\\Api\\FavoriteController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/FavoriteController.php',
         'App\\Http\\Controllers\\Api\\MessageController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/MessageController.php',
         'App\\Http\\Controllers\\Api\\ReferenceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/ReferenceController.php',
         'App\\Http\\Controllers\\Api\\SoloController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/SoloController.php',

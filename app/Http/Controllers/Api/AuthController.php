@@ -112,7 +112,8 @@ class AuthController extends Controller
         } elseif (auth()->user()->isVerified == false) {
 
             return response()->json([
-                'message' => 'not verfiy'
+                'message' => 'not verfiy',
+                'user_id' => auth()->user()->id,
             ], 200);
         } elseif (auth()->user()->isVerified == true) {
 

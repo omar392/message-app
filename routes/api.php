@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\FavoriteController;
 use App\Http\Controllers\Api\MessageController;
 use App\Http\Controllers\Api\ReferenceController;
 use App\Http\Controllers\Api\SoloController;
@@ -11,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 
 
 //messages
-Route::get('all-messages',[MessageController::class,'getMessage']);
+Route::post('all-messages',[MessageController::class,'getMessage']);
 //introductions
 Route::get('introductions',[MessageController::class,'getIntroduction']);
 //references
@@ -36,9 +37,9 @@ Route::group(['middleware' => ['jwt.verify']], function() {
     Route::post('update-user',[AuthController::class,'updateUser']);
 
     //favorite
-
-
-
+    Route::post('add-to-favourite',[FavoriteController::class,'addToFavorite']);
+    Route::post('remove-favourite',[FavoriteController::class,'unToFavorite']);
+    Route::get('user-favourite',[FavoriteController::class,'getUserFavorits']);
     //end favorite
 
     Route::get('logout', [AuthController::class, 'logout']);

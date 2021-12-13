@@ -10,15 +10,16 @@ use Illuminate\Http\Request;
 
 class MessageController extends Controller
 {
-    public function getMessage()
+    public function getMessage(Request $request)
     {
+
         $message = Message::where(['status'=>'active'])->orderBy('id','DESC')->paginate(10);
         return response()->json([
             'status'=>'success',
             'messages'=> MessageResource::collection($message),
         ],200);
     }
-    
+
     public function getIntroduction()
     {
         $introduction = Introduction::where(['status'=>'active'])->orderBy('id','DESC')->paginate(10);

@@ -21,6 +21,7 @@ return array(
     'App\\Http\\Controllers\\Admin\\TeamController' => $baseDir . '/app/Http/Controllers/Admin/TeamController.php',
     'App\\Http\\Controllers\\Admin\\UserController' => $baseDir . '/app/Http/Controllers/Admin/UserController.php',
     'App\\Http\\Controllers\\Api\\AuthController' => $baseDir . '/app/Http/Controllers/Api/AuthController.php',
+    'App\\Http\\Controllers\\Api\\FavoriteController' => $baseDir . '/app/Http/Controllers/Api/FavoriteController.php',
     'App\\Http\\Controllers\\Api\\MessageController' => $baseDir . '/app/Http/Controllers/Api/MessageController.php',
     'App\\Http\\Controllers\\Api\\ReferenceController' => $baseDir . '/app/Http/Controllers/Api/ReferenceController.php',
     'App\\Http\\Controllers\\Api\\SoloController' => $baseDir . '/app/Http/Controllers/Api/SoloController.php',
