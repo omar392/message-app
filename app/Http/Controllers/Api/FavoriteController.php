@@ -18,7 +18,7 @@ class FavoriteController extends Controller
         $user->favorite($message);
 
             return response()->json([
-                'success' => 1,
+                'status'=>'success',
                 'message' => 'added Successfully',
             ], 200);
 
@@ -32,7 +32,7 @@ class FavoriteController extends Controller
         $user->unfavorite($message);
 
             return response()->json([
-                'success' => 1,
+                'status'=>'success',
                 'message' => 'Deleted Successfully',
             ], 200);
 
@@ -46,7 +46,7 @@ class FavoriteController extends Controller
         $favortemessage = $user->getFavoriteItems(Message::class)->get();
         //dd($favorteDaycares->rates->stars);
             return response()->json([
-                'success' => 1,
+                'status'=>'success',
                 'favorites' => MessageResource::collection($favortemessage)
             ], 200);
 
